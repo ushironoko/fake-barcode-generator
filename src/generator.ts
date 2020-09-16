@@ -1,6 +1,5 @@
 function main(len: string[]) {
   try {
-    console.log(Math.random().toString(10))
     const r = Math.random()
       .toString(10)
       .slice(-len[2] + 1)
