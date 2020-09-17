@@ -8,7 +8,7 @@ export function barcodeGenerator(len: string) {
   const evenSum = body.filter((_, i) => i % 2 === 0).reduce((a, b) => a + b)
   const oddSum = body.filter((_, i) => i % 2 !== 0).reduce((a, b) => a + b)
 
-  const checkDesit = `${10 - +(evenSum * 3 + oddSum)}`.slice(-1)
+  const checkDesit = `${10 - (evenSum * 3 + oddSum)}`.slice(-1)
   return `${r}${checkDesit}`
 }
 
